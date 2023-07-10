@@ -1,4 +1,4 @@
-ximport os
+import os
 import arguably 
 import pyprofilers as pp
 import modin.pandas as pd
