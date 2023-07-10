@@ -2,7 +2,6 @@ import os
 import arguably 
 import pyprofilers as pp
 import modin.pandas as pd
-import gget
 @pp.profile(sort_by='cumulative', out_lines=30) 
 @pp.profile_by_line(exit=1) 
 @pp.simple_timer(num=1)
@@ -17,7 +16,7 @@ def genomeExtraction(alignmentgenome = FALSE,
     """
     Function: genomeExtraction
     Summary: this will take the genome alignment file in the format given below from 
-    the lastz or the blast alignments and then will extract the reference and the target
+    the lastz or the blat alignments and then will extract the reference and the target
     genome regions. It will extract from both the positive and the negative strand and in 
     the case of the negative strand it reverses the sequences. It also provides the option 
     for the filtering according to the given percentage match and also writes all the coordinates 
