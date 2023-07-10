@@ -1,3 +1,6 @@
+# note: this function take a one to one genome alignment or a transcript alignment. 
+# If you have multiple reference genome and one target genome then check the other code
+# in this repository
 import os
 import arguably 
 import pyprofilers as pp
