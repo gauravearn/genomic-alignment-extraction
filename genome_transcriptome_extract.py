@@ -25,12 +25,12 @@ def genomeExtraction(alignmentgenome = FALSE,
         genome  query_size  aligned_start   aligned_end matches mismatches  %_aligned   %_matched   chromosome  strand  start   end
 0   taeGut2 8000    1   8000    7788    60  100 97.35   chr1    +   5637454 5646796
 1   taeGut2 8000    6295    7425    1095    22  14.14   96.82   chr1    +   5642077 5643357
-2   taeGut2 8000    6332    6383    45  4   0.65    86.54   chr2    -   1365309 1365357
-3   taeGut2 8000    6351    6387    34  1   0.46    91.89   chr14   +   2096236 2096628
-4   taeGut2 8000    6351    6383    31  2   0.41    93.94   chr2    +   7208240 7208272
-5   taeGut2 8000    6357    6383    26  1   0.34    96.3    chr10   -   3293331 3293357
-6   taeGut2 8000    3498    3526    25  1   0.36    86.21   chr1A   -   71676009    71676034
-7   taeGut2 8000    3602    3624    22  1   0.29    95.65   chr14   +   12695042    12695064
+2   taeGut2 8000    6332    6383    45  4   0.65    86.54   chr1    -   1365309 1365357
+3   taeGut2 8000    6351    6387    34  1   0.46    91.89   chr1   +   2096236 2096628
+4   taeGut2 8000    6351    6383    31  2   0.41    93.94   chr1    +   7208240 7208272
+5   taeGut2 8000    6357    6383    26  1   0.34    96.3    chr1   -   3293331 3293357
+6   taeGut2 8000    3498    3526    25  1   0.36    86.21   chr1   -   71676009    71676034
+7   taeGut2 8000    3602    3624    22  1   0.29    95.65   chr1   +   12695042    12695064
     Attributes: 
         @param (multilevelgenome) default=FALSE: InsertHere
         @param (splitgenome) default=FALSE: InsertHere
