@@ -1,5 +1,5 @@
 # large_scale_genomic_alignment_extraction
-A scalable large scale genomic fraction aligner and extractor that uses numba for the large scale alignment of the genomes and the transcriptomes and process them over the cores for the extraction of the aligned regions. The aligned regions can also be mapped to the length plotter and can be machine trained for specific applications. This repostiory contains two codes one for the one-one genome alignment and extractions and it is used for one reference genome and one target genome and the other code in which you can have one target genome and as many as reference genomes you want. \
+A scalable large scale genomic fraction aligner and extractor that uses numba for the large scale alignment of the genomes and the transcriptomes and process them over the cores for the extraction of the aligned regions. The aligned regions can also be mapped to the length plotter and can be machine trained for specific applications. This repository contains two codes one for the one-one genome alignment and extractions and it is used for one reference genome and one target genome and the other code in which you can have one target genome and as many as reference genomes you want. \
 Gaurav Sablok \
 Senior Postdoctoral Fellow \
 Faculty of Natural and Agricultural Sciences Room 7-35, \
