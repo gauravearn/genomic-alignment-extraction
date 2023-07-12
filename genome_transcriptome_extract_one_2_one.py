@@ -40,7 +40,7 @@ def genomeExtraction(alignmentgenome = FALSE,
     Returns: InsertHere
     """""""""
 if alignmentgenome and reference_genome and target_genome:
-    reference_genome = os.path.join(os.getcwd(), multilevelgenome)
+    reference_genome = os.path.join(os.getcwd(), reference_genome)
 reference_genome_dict = {}
 read_reference_genome = [i.strip() for i in open("reference_genome", "r").readlines()]
 for i in read_reference_genome:
@@ -49,18 +49,18 @@ for i in read_reference_genome:
         if i not in reference_genome_dict:
             reference_genome_dict[i] = ""
         continue
-            reference_genome_dict[path] += i.strip()
+    reference_genome_dict[path] += i.strip()
 reference_genome_sequences = list(reference_genome_dict.values())
 reference_genome_dict_names = list(reference_genome_dict.keys())
 target_genome_dict = {}
-read_target_genome = [i.strip() for i in open("reference_genome", "r").readlines()]
+read_target_genome = [i.strip() for i in open("target_genome", "r").readlines()]
 for i in read_target_genome:
     if i.startswith(">"):
         path = i.strip()
         if i not in target_genome_dict:
             target_genome_dict[i] = ""
         continue
-            target_genome_dict[path] += i.strip()
+    target_genome_dict[path] += i.strip()
 target_genome_sequences = list(reference_genome_dict.values())
 target_genome_dict_names = list(reference_genome_dict.keys())
 alignment_read = os.path.join(os.getcwd(), alignmentgenome)
