@@ -1,10 +1,8 @@
-# note: this function take a one to one genome alignment or a transcript alignment. 
-# If you have multiple reference genome and one target genome then check the other code
-# in this repository
 import os
 import arguably 
 import pyprofilers as pp
 import modin.pandas as pd
+import gget
 @pp.profile(sort_by='cumulative', out_lines=30) 
 @pp.profile_by_line(exit=1) 
 @pp.simple_timer(num=1)
@@ -19,7 +17,7 @@ def genomeExtraction(alignmentgenome = FALSE,
     """
     Function: genomeExtraction
     Summary: this will take the genome alignment file in the format given below from 
-    the lastz or the blat alignments and then will extract the reference and the target
+    the lastz or the blast alignments and then will extract the reference and the target
     genome regions. It will extract from both the positive and the negative strand and in 
     the case of the negative strand it reverses the sequences. It also provides the option 
     for the filtering according to the given percentage match and also writes all the coordinates 
@@ -41,6 +39,7 @@ def genomeExtraction(alignmentgenome = FALSE,
     """""""""
 if alignmentgenome and reference_genome and target_genome:
     reference_genome = os.path.join(os.getcwd(), reference_genome)
+    reference_genome = os.path.join(os.getcwd(), target_genome)
 reference_genome_dict = {}
 read_reference_genome = [i.strip() for i in open("reference_genome", "r").readlines()]
 for i in read_reference_genome:
@@ -87,10 +86,9 @@ for i in range(len(reference_aligned_negative_strand_sequences_start)):
     reference_genome_negative_strand_extract_sequences.append(reference_genome_sequence[reference_genome_negative_strand_extract_sequences[i]]:
                                                               reference_genome_sequence[reference_genome_negative_strand_extract_sequences[i]])
 reference_genome_negative_strand_extract_sequences_reverese = [reversed(reference_genome_negative_strand_extract_sequences[i]) for i in range(len(reference_genome_negative_strand_extract_sequences))]
-
-
 if alignmentgenome and reference_genome and target_genome and percent_match:
     reference_genome = os.path.join(os.getcwd(), reference_genome)
+    reference_genome = os.path.join(os.getcwd(), target_genome)
     percent_filtering = percent_match
 reference_genome_dict = {}
 read_reference_genome = [i.strip() for i in open("reference_genome", "r").readlines()]
