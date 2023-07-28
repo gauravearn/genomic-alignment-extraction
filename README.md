@@ -14,6 +14,3 @@ WOS: https://www.webofscience.com/wos/author/record/C-5940-2014 \
 Github:https://github.com/sablokgaurav \
 Linkedin: https://www.linkedin.com/in/sablokgaurav/ \
 ResearchGate: https://www.researchgate.net/profile/Gaurav-Sablok \
-Plant Bioinformatics | Illumina | PacBio | OxfordNanoPore | Transcriptomics | \
-Genomics | Metagenomics | DevOPS | Data Engineering and Analyst | \
-Python | R | Java | Scala | Bash | DJANGO | Machine Learning \
