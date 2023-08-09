@@ -3,11 +3,6 @@ A scalable large scale genomic fraction aligner and extractor for the large scal
 In case of the one genome one target, such as bacterial or the organell genome alignments, it provides the target genome start, end, reference genome start end and also corrdinates and reverse corrdinates and sequences. \
 In case of the one 2 many genome, such as a specific transcript alignment to the larger database of the transcripts, or genome, it provides, the target start, end, cordinates, sequences and returns a list of lists with the named tuple as the referencename, sequenceextracted. \
 Gaurav Sablok \
-Senior Postdoctoral Fellow \
-Faculty of Natural and Agricultural Sciences Room 7-35, \
-Agricultural Sciences Building University of Pretoria, \
-Private Bag X20 Hatfield 0028, South Africa \
-Academia : https://up-za.academia.edu/GauravSablok \
 Frontiers: https://loop.frontiersin.org/people/33293/overview \
 ORCID: https://orcid.org/0000-0002-4157-9405 \
 WOS: https://www.webofscience.com/wos/author/record/C-5940-2014 \
