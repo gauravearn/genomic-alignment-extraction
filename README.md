@@ -3,7 +3,7 @@ A scalable large scale genomic fraction aligner and extractor for the large scal
 
 In case of the one genome one target, such as bacterial or the organell genome alignments, it provides the target genome start, end, reference genome start end and also corrdinates and reverse corrdinates and sequences. In case of the one 2 many genome, such as a specific transcript alignment to the larger database of the transcripts, or genome, it provides, the target start, end, cordinates, sequences and returns a list of lists with the named tuple as the referencename, sequenceextracted. 
 
-Gaurav Sablok \
+Gaurav \
 Academic Staff Member \
 Bioinformatics \
 Institute for Biochemistry and Biology \
